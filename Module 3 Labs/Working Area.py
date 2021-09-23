@@ -1,11 +1,8 @@
-blocks = int(input("Enter the number of blocks: "))
-height = 0
-Blocks_needed_for_next_level = 0
-while True:
-    Blocks_needed_for_next_level += 1 # Every itteration of the while loop will increment n by +1.
-    blocks = blocks - Blocks_needed_for_next_level  # Every increment in height will deduct the number of blocks needed to build the next level.
-    if blocks <= 0: 
-        break
-    height = height + 1 # Each itteration of the while loop will increment the height by 1.
-# When the appropriate ammount of blocks can not be deducted from the total, the while loop will stop.
-print("The height of the pyramid:", height)    
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+list_without_duplicates = []
+for number in my_list:  # Browse all numbers from the source list.
+	if number not in list_without_duplicates:  # If the number doesn't appear within the new list...
+		list_without_duplicates.append(number)  # ...append it here.
+my_list = list_without_duplicates[:]  # Make a copy of new_list.
+print("The list with unique elements only:")
+print(my_list)

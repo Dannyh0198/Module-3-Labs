@@ -90,17 +90,17 @@ print(word_without_vowels)
 
 # 3.2.1.14 LAB: Essentials of the while loop
 # The pyramid is stacked according to one simple principle: each lower layer contains one block more than the layer above.
-blocks = int(input("Enter the number of blocks: "))
-height = 0
-counter = 0
+blocks = int(input("Enter the number of blocks: ")) # Ask user to input a number
+height = 0 # Set the height variable at 0
+Blocks_needed_for_next_level = 0 # Set variable for the ammount of blocks you need to build the next level.
 while True:
-    counter += 1# Every itteration of the while loop will increment n by +1.
-    blocks = blocks - counter  # Every increment in height will deduct a number of blocks from the total.
+    Blocks_needed_for_next_level += 1 # Every itteration of the while loop will increment the ammount of blocks needed by +1.
+    blocks = blocks - Blocks_needed_for_next_level  # Every increment in height will deduct the number of blocks needed to build the next level.
+    if blocks <= 0: # Checks the block variable counter. If it is equal to or less than zero. End the loop. If not add 1 to the height.
+        break # Following on from the IF statement. Break the while loop.
     height = height + 1 # Each itteration of the while loop will increment the height by 1.
-    if blocks <= 0: 
-        break
 # When the appropriate ammount of blocks can not be deducted from the total, the while loop will stop.
-print("The height of the pyramid:", height) 
+print("The height of the pyramid:", height) # When the while rule has completed its execution. It will print the current "height" variable. 
 
 #3.2.1.15 LAB: Collatz's hypothesis
 # take any non-negative and non-zero integer number and name it c0;

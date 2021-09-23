@@ -25,6 +25,9 @@
     <Compile Include="Module 3.2.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Module 3.4.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Working Area.py">
       <SubType>Code</SubType>
     </Compile>
